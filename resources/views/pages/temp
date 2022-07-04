@@ -1,0 +1,10 @@
+        if (isset($request->pending_status_color)){
+            $webColor = WebColor::where('component', '=', 'pending_status_color')->first();
+            if ($webColor == null){
+                $webColor  = new WebColor();
+            }
+            $webColor->component = 'pending_status_color';
+            $webColor->name = $request->pending_status_color;
+            $webColor->save();
+            return redirect()->back()->with(['notify_success' => 'Pending Status Color Updated Successfully']);
+        }

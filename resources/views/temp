@@ -1,0 +1,23 @@
+        <div class="modal fade" id="successStatusColorModal" tabindex="-1" aria-labelledby="successStatusColorModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successStatusColorModalLabel">Success Status Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{{ route('update-web-color') }}" method="post" class="row justify-content-evenly" id="success_status_color_form">
+                            @csrf
+                            <span class="mb-2 bg-primary p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-primary" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Blue&nbsp;</span>
+                            <span class="mb-2 bg-secondary p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-secondary" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Gray&nbsp;</span>
+                            <span class="mb-2 bg-info p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-info" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Sky Blue&nbsp;</span>
+                            <span class="mb-2 bg-dark p-1 col-lg-5 rounded-pill text-white"><input type="radio" name="success_status_color" value="btn-dark" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Black&nbsp;</span>
+                            <span class="mb-2 bg-light p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-light" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;White&nbsp;</span>
+                            <span class="mb-2 bg-danger p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-danger" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Red&nbsp;</span>
+                            <span class="mb-2 bg-warning p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-warning" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Yellow&nbsp;</span>
+                            <span class="mb-2 bg-success p-1 col-lg-5 rounded-pill"><input type="radio" name="success_status_color" value="btn-success" class="" onchange="formSubmiter('success_status_color_form')">&nbsp;Green&nbsp;</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>

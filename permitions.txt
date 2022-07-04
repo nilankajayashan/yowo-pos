@@ -1,0 +1,10 @@
+["dashboard","view-category","edit-category","add-category","delete-category","approve-category","view-product","edit-product","add-product","delete-product","approve-product","view-sell","edit-sell","add-sell","delete-sell","view-customer","edit-customer","add-customer","delete-customer","site-setting","view-order","edit-order","add-order","delete-
+
+
+
+order","view-employee","edit-employee","add-employee","delete-employee","approve-employee"]
+
+
+
+
+[{"product_id":"25","quantity":"4"}]
